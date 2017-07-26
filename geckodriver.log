@@ -650,3 +650,110 @@ JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b58520
 JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
 JavaScript warning: http://s3.music.126.net/sep/s/2/pt_profile_ranking.js?4f509202767a4d27f3664d0f2b486afe, line 4: unreachable code after return statement
 1501017857113	Marionette	INFO	Ceased listening
+1501057405884	geckodriver	INFO	geckodriver 0.18.0
+1501057405892	geckodriver	INFO	Listening on 127.0.0.1:38149
+1501057406992	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1501057408784	Marionette	INFO	Listening on port 37857
+1501057408882	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/pt_profile_ranking.js?4f509202767a4d27f3664d0f2b486afe, line 4: unreachable code after return statement
+1501058056672	geckodriver	INFO	geckodriver 0.18.0
+1501058056676	geckodriver	INFO	Listening on 127.0.0.1:33391
+1501058056785	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1501058058547	Marionette	INFO	Listening on port 42383
+1501058058664	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/pt_profile_ranking.js?4f509202767a4d27f3664d0f2b486afe, line 4: unreachable code after return statement
+1501058091296	geckodriver	INFO	geckodriver 0.18.0
+1501058091301	geckodriver	INFO	Listening on 127.0.0.1:43295
+1501058091410	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1501058093288	Marionette	INFO	Listening on port 36117
+1501058093328	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/pt_profile_ranking.js?4f509202767a4d27f3664d0f2b486afe, line 4: unreachable code after return statement
+1501058256930	geckodriver	INFO	geckodriver 0.18.0
+1501058256937	geckodriver	INFO	Listening on 127.0.0.1:36865
+1501058920385	geckodriver	INFO	geckodriver 0.18.0
+1501058920387	geckodriver	INFO	Listening on 127.0.0.1:36257
+1501058920504	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1501058922283	Marionette	INFO	Listening on port 42857
+1501058922337	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/pt_profile_ranking.js?4f509202767a4d27f3664d0f2b486afe, line 4: unreachable code after return statement
+1501059193164	geckodriver	INFO	geckodriver 0.18.0
+1501059193171	geckodriver	INFO	Listening on 127.0.0.1:58539
+1501059194278	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1501059196380	Marionette	INFO	Listening on port 42971
+1501059196443	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/pt_profile_ranking.js?4f509202767a4d27f3664d0f2b486afe, line 4: unreachable code after return statement
+1501059283458	geckodriver	INFO	geckodriver 0.18.0
+1501059283463	geckodriver	INFO	Listening on 127.0.0.1:38171
+1501059283559	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1501059285333	Marionette	INFO	Listening on port 40481
+1501059285400	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/pt_profile_ranking.js?4f509202767a4d27f3664d0f2b486afe, line 4: unreachable code after return statement
+1501059309859	geckodriver	INFO	geckodriver 0.18.0
+1501059309862	geckodriver	INFO	Listening on 127.0.0.1:40819
+1501059309962	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1501059311777	Marionette	INFO	Listening on port 40751
+1501059311907	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/pt_profile_ranking.js?4f509202767a4d27f3664d0f2b486afe, line 4: unreachable code after return statement
+1501059361690	geckodriver	INFO	geckodriver 0.18.0
+1501059361694	geckodriver	INFO	Listening on 127.0.0.1:46215
+1501059361818	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1501059363590	Marionette	INFO	Listening on port 37725
+1501059363672	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/pt_profile_ranking.js?4f509202767a4d27f3664d0f2b486afe, line 4: unreachable code after return statement
+1501059398299	geckodriver	INFO	geckodriver 0.18.0
+1501059398303	geckodriver	INFO	Listening on 127.0.0.1:36101
+1501059398399	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1501059400142	Marionette	INFO	Listening on port 34621
+1501059400228	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/pt_profile_ranking.js?4f509202767a4d27f3664d0f2b486afe, line 4: unreachable code after return statement
+1501059506102	geckodriver	INFO	geckodriver 0.18.0
+1501059506106	geckodriver	INFO	Listening on 127.0.0.1:46605
+1501059506210	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1501059507989	Marionette	INFO	Listening on port 45109
+1501059508062	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/pt_profile_ranking.js?4f509202767a4d27f3664d0f2b486afe, line 4: unreachable code after return statement
+1501060441792	geckodriver	INFO	geckodriver 0.18.0
+1501060441794	geckodriver	INFO	Listening on 127.0.0.1:40443
+1501060441883	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1501060443652	Marionette	INFO	Listening on port 38385
+1501060443722	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/core.js?444cceb31c3c26b585203b888d0be717, line 91: unreachable code after return statement
+JavaScript warning: http://s3.music.126.net/sep/s/2/pt_profile_ranking.js?4f509202767a4d27f3664d0f2b486afe, line 4: unreachable code after return statement
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************

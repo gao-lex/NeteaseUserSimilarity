@@ -1,54 +1,72 @@
+import selenium
 from selenium import webdriver
 from selenium.webdriver import ActionChains
-class User:
-    def __init__(self,nikeName,level,fans,songsRank):
-        self.nikeName = nikeName
-        self.level = level
-        self.fans = fans
-        self.songsRank = songsRank
+import pandas as pd
+import json
 
-def crawler():
+# 粉丝列表
+fansUrl = 'http://music.163.com/#/user/fans?id='
+# 听歌排行
+songsRankUrl = 'http://music.163.com/#/user/songs/rank?id='
+
+def crawler(numberOfUsers):
+    UserDict = {}
     ids = ['100544935']
     doneIds = []
-    homeUrl = 'http://music.163.com/#/user/home?id='
-    # 粉丝列表
-    fansUrl = 'http://music.163.com/#/user/fans?id='
-    # 听歌排行
-    songsRankUrl = 'http://music.163.com/#/user/songs/rank?id='
 
-    # driver = webdriver.Chrome()
-    driver = webdriver.Firefox()
+    driver = webdriver.Chrome()
+    # driver = webdriver.Firefox()
+    driver.implicitly_wait(2)
+    i = 1
+    while len(ids) != 0 and len(doneIds)!=numberOfUsers :
+        print('正在抓取第'+str(i)+'个用户'+ids[0]+'未抓取的数量为'+str(len(ids)-1))
+        try:
+            if ids[0] not in doneIds:
+                driver.get(fansUrl+ids[0])
+                # 获取g_iframe中的元素信息
+                driver.switch_to_frame('g_iframe')
 
-    while len(ids) != 0:
-        driver.get(fansUrl+ids[0])
-        # 获取g_iframe中的元素信息
-        driver.switch_to_frame('g_iframe')
+                # 获取nikeName和等级
+                headBox = driver.find_element_by_id('head-box')
+                nikeName,level = headBox.find_element_by_id('j-name-wrap').text.split('\n')
+                fansList = []
+                # 获取前20个粉丝的Id
+                mainBox = driver.find_element_by_id('main-box')
+                fansBoxs = mainBox.find_elements_by_tag_name('li')
+                for li in fansBoxs:
+                    fanid = li.find_element_by_tag_name('a').get_attribute('href').split('id=')[-1]
+                    ids.append(fanid)
+                    fansList.append(fanid)
 
-        # 获取nikeName和等级
-        headBox = driver.find_element_by_id('head-box')
-        nikeName,level = headBox.find_element_by_id('j-name-wrap').text.split('\n')
+                # 获取所有时间听歌排行前100
+                driver.get(songsRankUrl + ids[0])
+                # 获取g_iframe中的元素信息
+                driver.switch_to_frame('g_iframe')
 
-        # 获取前20个粉丝的Id
-        mainBox = driver.find_element_by_id('main-box')
-        fansBoxs = mainBox.find_elements_by_tag_name('li')
-        for li in fansBoxs:
-            ids.append(li.find_element_by_tag_name('a').get_attribute('href').split('id=')[-1])
+                # 点击进入所有时间的听歌排行
+                songsAllRank = driver.find_element_by_id('songsall')
+                driver.execute_script('arguments[0].click();',songsAllRank)
+                songsBox = driver.find_element_by_id('m-record').find_elements_by_css_selector('span.txt')
+                songsAllRankDict ={}
+                for song in songsBox:
+                    songID = song.find_element_by_tag_name('a').get_attribute('href').split('id=')[-1]
+                    songNme = song.text
+                    songsAllRankDict[songID] = songNme
 
-        # 获取所有时间听歌排行前100
-        driver.get(songsRankUrl + ids[0])
-        # 获取g_iframe中的元素信息
-        driver.switch_to_frame('g_iframe')
+                UserDict[ids[0]] = {
+                    'nickName':nikeName,
+                    'level':level,
+                    'fans':fansList,
+                    'songsAllRank':songsAllRankDict
+                }
 
-        # 点击进入所有时间的听歌排行
-        songsAll = driver.find_element_by_css_selector('#songsall')
-        driver.execute_script('arguments[0].click();',songsAll)
-        songsBox = driver.find_element_by_id('m-record').find_elements_by_tag_name('li')
-        for song in songsBox:
-            print(song)
+                doneIds.append(ids[0])
+        except selenium.common.exceptions.NoSuchElementException as e:
+            print('出错了，自动跳过')
+        finally:
+            del ids[0]
+            i+=1
+    with open('./info.json','w') as f:
+        json.dump(UserDict,f)
 
-
-        doneIds.append(ids[0])
-
-        del ids[0]
-
-crawler()
+crawler(100)

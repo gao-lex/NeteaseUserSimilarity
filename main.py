@@ -1,3 +1,0 @@
-import crawler
-
-crawler.crawler()
