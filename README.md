@@ -1,6 +1,6 @@
 ## 使用方法：
 * download这个项目
-* python crawler.py 获得数据info.json,可以的话用我抓好的100个数据[./数据/info.json](./数据/info.json)，自己抓耗时也得几分钟。
+* python crawler.py 获得数据info.json,可以的话用我抓好的100个数据[./info.json](./info.json)，自己抓耗时也得几分钟。
 ![info.json](./info-json.png)
 json数据结构为:
     ```json
@@ -64,5 +64,6 @@ json数据结构为:
     # 禁止转换
     pd.read_json(json.dumps(UserDict),convert_axes=False)
     ```
+4. 字典过滤：
 
     
