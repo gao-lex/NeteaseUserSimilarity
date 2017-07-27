@@ -1,7 +1,8 @@
 import json
 import random
 from math import sqrt
-from PIL import Image,ImageDraw
+import matplotlib.pyplot as plt
+import numpy as np
 
 def tanimoto(d1,d2):
     # 返回值交集与并集的比率
@@ -20,10 +21,6 @@ def tanimoto(d1,d2):
     return 1.0 - shr/(len(songsList1)+len(songsList2)-shr)
 
 def dataCleaning(data):
-    # for i in data.keys():
-    #     if len(data[i]['songsAllRank'])==0:
-    #         del data[i]
-    # return data
     # 字典过滤,将采集数据中搜有时间听歌100首以上的前100首过滤出来
     return {k:v for(k,v) in data.items() if len(v['songsAllRank']) !=0}
 
@@ -78,17 +75,18 @@ def clusterScaleDown(data,distance = tanimoto,rate=0.01):
 
     return loc
 
-def draw2d(data):
-    img = Image.new('RGB', (2000,2000), 255, 255, 255)
-    draw = ImageDraw.Draw(img)
-    loopList = data.keys()
-    print(loopList)
-
+def draw2d(loc,names):
+    loc = np.array(loc)
+    x = loc[:,0]
+    y = loc[:,1]
+    for i in range(len(x)):
+        plt.scatter(x[i],y[i])
+        plt.text(x[i],y[i],names[i])
+    plt.show()
 f = open('./info.json','r')
 data = dataCleaning(json.load(f))
-keys1 = data.keys()
-keys2 = data.keys()
-print(keys1==keys2)
-clusterScaleDown(data)
-draw2d(data)
+keysList = data.keys()
+nameList = [data[key]['nickName'] for key in keysList]
+loc = clusterScaleDown(data)
+draw2d(loc,nameList)
 f.close()

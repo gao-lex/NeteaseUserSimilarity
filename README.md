@@ -1,3 +1,7 @@
+[TOC]
+# 聚类结果：
+![结果](./clusterAnswer2.png)
+
 ## 使用方法：
 * download这个项目
 * python crawler.py 获得数据info.json,可以的话用我抓好的100个数据[./info.json](./info.json)，自己抓耗时也得几分钟。
@@ -13,7 +17,7 @@ json数据结构为:
       }
     }
     ```
-
+* python cluster即可得到图
 ## 需要：
 
 * firefox 浏览器
@@ -65,5 +69,26 @@ json数据结构为:
     pd.read_json(json.dumps(UserDict),convert_axes=False)
     ```
 4. 字典过滤：
+    ```python
+    def dataCleaning(data):
+        # 字典过滤,将采集数据中搜有时间听歌100首以上的前100首过滤出来
+        return {k:v for(k,v) in data.items() if len(v['songsAllRank']) !=0}
+    ```
+
+5. matplotlib 中文字例
+    未解决前：
+    ![figureCantChinese](./figureCantChinese.png)
+    解决办法：
+    * 第一步:[下载字体:msyh.ttf (微软雅黑)](./msyh.ttf.zip)放在系统字体文件夹下:`/usr/share/fonts`
+    
+        同时也复制并放在matplotlib的字体文件夹`/fonts/ttf`下![matplotlib目录](./matplotlib目录.png)
+    
+    * 第二步：修改matplotlib配置文件：如上图的目录删除`font.family`和`font.sans-serif`两行前的#，
+    font.family 改为Microsoft YaHei
+    并在font.sans-serif后添加中文字体Microsoft YaHei
+    如图：
+    ![changeMatplotlibrc](./changeMatplotlibrc.png)
+    
+    * 第三步：删除~/.cache/matplotlib下文件fontList.py3k.cache
 
     
